@@ -37,40 +37,145 @@ function busqueda(str,bus: String; b:Integer):Integer;
            busqueda:=0;
    end;
 function control(numero: String;b:Integer):Integer;
-   var f,f2,f3:Integer;
-       i:LongInt;
-   begin
-     f:=0; i:=0; f3:=0;f2:=0;
-     while((i<=length(numero))AND(f=0)) do
-       begin
-           if((b<=16) AND (b>=2)) then
-               begin
-                  if(busqueda(CaracteresExtra,numero[i],b)=1)then
+var f,f2,f3:Integer;
+    i:LongInt;
+begin
+  f:=0; i:=0; f3:=0;f2:=0;
+  if(length(numero)=0)then
+      begin
+          f:=1;
+      end;
+  if(length(numero)>66)then
+      begin
+           f:=1;
+      end;
+  while((i<=length(numero))AND(f=0)) do
+    begin
+        if((b<=16) AND (b>=2)) then
+            begin
+               if(busqueda(CaracteresExtra,numero[i],b)=1)then
+                  i:=i+1
+               else if((i=1)and (((numero[i]='+'))OR (numero[i]='-')))then
+                  begin
+                     f3:=1;
                      i:=i+1
-                  else if((i=1)and (((numero[i]='+'))OR (numero[i]='-')))then
-                     begin
-                        f3:=1;
-                        i:=i+1
-                     end
-                  else if(((numero[i]=',')and (i<>1)) OR ((numero[i]='.') and (i<>1)) and (f2=0))then
-                     begin
-                         i:=i+1;
-                         f2:=1;
-                     end
-                  else if((numero[i]=',') OR (numero[i]='.') OR ((numero[i]='+') ) OR ((numero[i]='-')) and (f3=1) and (f2=1))then
-                     f:=1
-                  else
-                     f:=1;
-               end
-           else
-               f:=1;
-       end;
+                  end
+               else if((((numero[i]=',')and (i<>1)) OR ((numero[i]='.')) and (i<>1)) and (f2=0))then
+                  begin
+                      i:=i+1;
+                      f2:=1;
+                  end
+               else if(((numero[i]=',') OR (numero[i]='.') OR (numero[i]='+')  OR (numero[i]='-')) and (f3=1) and (f2=1))then
+                  f:=1
+               else
+                  f:=1;
+            end
+        else
+            f:=1;
+    end;
 
-       if(f=1) then
-           control:=0
-       else
-           control:=1;
-   end;
+    if(f=1) then
+        control:=0
+    else
+        control:=1;
+end;
+
+function control2(numero: String;b:Integer):Integer;
+var f,f2:Integer;
+    i:LongInt;
+begin
+  f:=0; i:=0;  f2:=0;
+  if(length(numero)=0)then
+          f:=1;
+  while((i<=length(numero))AND(f=0)) do
+    begin
+        if((b<=16) AND (b>=2)) then
+            begin
+               if(busqueda(CaracteresExtra,numero[i],b)=1)then
+                  i:=i+1
+               else if( (((numero[i]='+') and (i=1)) OR ((numero[i]='-') and (i=1))) and (f2=0))then
+                    begin
+                    i:=i+1;
+                    f2:=1
+                    end
+               else if(((numero[i]='+') OR (numero[i]='-')) and (f2=1))then
+                    f:=1
+               else
+                  f:=1;
+            end
+        else
+            f:=1;
+    end;
+
+    if(f=1) then
+        control2:=0
+    else
+        control2:=1;
+end;
+
+function control3(numero: String;b:Integer):Integer;
+var f:Integer;
+    i:LongInt;
+begin
+  f:=0; i:=0;
+  if(length(numero)=0)then
+      begin
+          f:=1;
+      end;
+  while((i<=length(numero))AND(f=0)) do
+    begin
+        if((b<=16) AND (b>=2)) then
+            begin
+               if(busqueda(CaracteresExtra,numero[i],b)=1)then
+                  i:=i+1
+               else
+                  f:=1;
+            end
+        else
+            f:=1;
+    end;
+
+    if(f=1) then
+        control3:=0
+    else
+       control3:=1;
+end;
+
+function Carga_Exponente():Integer;
+var num,r: Integer;
+    bar: String;
+begin
+    repeat
+           writeln('Ingresar Exponente: ');
+           readln(bar);
+    until (control2(bar,10)=1) ;
+    Val(bar,num,r);
+    Carga_Exponente:=num;
+end;
+
+function Carga_Base():Integer;
+var num,r: Integer;
+    bar: String;
+begin
+    repeat
+           writeln('Ingresar Base: ');
+           readln(bar);
+           Val(bar,num,r);
+    until ((control3(bar,10)=1) and ((num>=2) and (num<=16))) ;
+    Carga_base:=num;
+end;
+function Carga_Numerito(bas: Integer):String;
+var i: Integer;
+    num: String;
+begin
+    repeat
+           writeln('Ingresar Numero: ');
+           readln(num);
+           for i:=1 to Length(num)do
+               num[i]:=Upcase(num[i]);
+    until ((control(num,bas)=1)) ;
+    Carga_Numerito:=num;
+end;
 function DevuelveNumConExp0(num:tnumero):tnumero;//funcion usada solo si exponente!=0
 var i:integer; auxCad:string; NUMaux:tnumero;
 begin
@@ -534,34 +639,9 @@ var                                //devolvera 1 si se ingresaron los datos corr
 begin
   writeln('ADVERTENCIA: El numero ingresado debe tener como maximo 10 digitos como parte entera 32 digitos como parte decimal, sin contar el signo');
   seguir:=true;
-  writeln('Ingresar Numero: ');
-  readln(numero);
-  for i:=1 to Length(numero)do
-      numero[i]:=Upcase(numero[i]);
-  writeln('Ingresar Base: ');
-  readln(numeroingr.base);
-  writeln('Ingresar Exponente: ');
-  readln(numeroingr.exponente);
-  while (control(numero,numeroingr.base)=0) and seguir do
-    begin
-       writeln('El numero ingresado no es valido');
-       writeln('Por favor ingrese un nuevo numero: ');
-       writeln('Si no desea ingresar ningun numero ponga SALIR');
-       readln(numero);
-       if (numero[1]='S') or (numero[1]='s') then
-       begin
-          seguir:=false;
-       end
-       else
-       begin
-         for i:=1 to Length(numero)do
-           numero[i]:=Upcase(numero[i]);
-         writeln('Ingresar Base: ');
-         readln(numeroingr.base);
-         writeln('Ingresar Exponente: ');
-         readln(numeroingr.exponente);
-       end;
-    end;
+  numeroingr.base:=Carga_Base();
+  numero:=Carga_numerito(numeroingr.base);
+  numeroingr.exponente:=Carga_Exponente();
   if (seguir=true) then
   begin
     Carga_Numero:=1;
@@ -643,7 +723,7 @@ var op,b:Integer;
      writeln('Seleccione una base ([2;16]): ');
      readln(op);
      b:=0;
-    while(b=0) do
+     while(b=0) do
       begin
            if(op>=2) and (op<=16) then
             begin
@@ -652,7 +732,7 @@ var op,b:Integer;
             end
            else
                begin
-                 writeln('Desea ingresar otra base?:1-Si ,<>1-No');
+                 writeln('Desea ingresar otra base?:1-Si ,0-No');
                  readln(op);
                  if(op<>1) then
                  begin
@@ -697,15 +777,19 @@ begin
              numeroConv.decimal:=multReiterada(numeroingr.decimal,numeroConv.base);
              writeln('3.Entero: ',numeroConv.entero);
              writeln('3.Decimal: ',numeroConv.decimal);
-
-             writeln('****Numero en B`: ****');
+             writeln(' ');
+             writeln('                          ****Numero en B`: ****');
+             writeln(' ');
              writeln('*-Forma Sin Normalizar: '+numeroConv.entero+'.'+numeroConv.decimal);
              C_Punto_Flotante(numeroConv);
+             writeln(' ');
              write('*-Forma Normalizada: ');
              write('0.',(numeroConv.decimal));
              write('10^ ',(numeroConv.exponente));
-             writeln('----------------------------------------');
-             opcion:=-1;
+             writeln(' ');
+             writeln('--------------------------------------------------------------------');
+             writeln(' ');
+             opcion:=-1;  
              end
              else begin writeln('proceda el programa con mismo numero ingresado...!'); end;
             end;
