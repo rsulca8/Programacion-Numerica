@@ -610,7 +610,7 @@ begin
    for i:=1 to Length(num.Entero) do
    begin
       digitoDecimal := fn_auxRed(num.Entero[i]);
-      peso := StrtoInt(num.Decimal) * trunc(power(num.base, expo));
+      peso := digitoDecimal * trunc(power(num.base, expo));
       numConvert.Entero := suma(numConvert.Entero, IntToStr(peso));
       dec(expo);
    end;
@@ -635,8 +635,6 @@ begin
    Delete(numConvert.Decimal, 1, 2);
    end;
    sumaPonderada := numConvert;
-   writeln('Parte Entera: ',numConvert.entero);
-   writeln('Parte Decimal: ',numConvert.decimal);
 end;
 
 function Menu1():Integer;
