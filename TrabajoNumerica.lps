@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="692"/>
+        <CursorPos X="85" Y="721"/>
+        <FoldState Value=" T3G0L3 pj7jW0B4 piejD034]Ifk70B01[T4TkN06[94MjY0O T6qH011 T1qJ0B~"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\TP1Numerica\Walter-Punto Flotante Normalizado\PuntoFlotante.lpr"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="15" Y="14"/>
+        <FoldState Value=" T3G0T3B"/>
+        <UsageCount Value="11"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\TP1Numerica\Wilson-Punto Flotante sin nornalizar\ConvertNumeroMimodulo.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="5" Y="76"/>
+        <FoldState Value=" T3E0bE"/>
+        <UsageCount Value="9"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\TP1Numerica\rodrigo-Control de Entrada\Project1.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3"/>
+        <CursorPos Y="13"/>
+        <FoldState Value=" T3Z0Y1U"/>
+        <UsageCount Value="11"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\TP1Numerica\Conversion\Conversion.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="379"/>
+        <CursorPos Y="392"/>
+        <FoldState Value=" TC5A41 T3I0L2 piZjI0B17411."/>
+        <UsageCount Value="12"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\TP1Numerica\alejandro- Multiplicacion Reiterada\MultiplicacionReiteradaAct\multiplicacionReiterada.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="185"/>
+        <CursorPos X="44" Y="189"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\TP1Numerica\Ana-Divicion Reiterada\divisionReiterada.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="7" Y="30"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\TP1Numerica\Maxi-Redondeo Simetrico y Truncamiento\project.lpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="24" Y="4"/>
+        <FoldState Value=" T3iD0{91"/>
+        <UsageCount Value="11"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="613" Column="67" TopLine="598"/>
+      </Position1>
+      <Position2>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="615" Column="24" TopLine="601"/>
+      </Position2>
+      <Position3>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="602" Column="27" TopLine="588"/>
+      </Position3>
+      <Position4>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="667" Column="65" TopLine="652"/>
+      </Position4>
+      <Position5>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="668" Column="34" TopLine="653"/>
+      </Position5>
+      <Position6>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="602" Column="27" TopLine="588"/>
+      </Position6>
+      <Position7>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="670" Column="13" TopLine="654"/>
+      </Position7>
+      <Position8>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="667" Column="65" TopLine="652"/>
+      </Position8>
+      <Position9>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="602" Column="27" TopLine="588"/>
+      </Position9>
+      <Position10>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="598" Column="123" TopLine="588"/>
+      </Position10>
+      <Position11>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="602" Column="27" TopLine="588"/>
+      </Position11>
+      <Position12>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="599" Column="119" TopLine="588"/>
+      </Position12>
+      <Position13>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="602" Column="35" TopLine="588"/>
+      </Position13>
+      <Position14>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="671" TopLine="653"/>
+      </Position14>
+      <Position15>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="667" Column="65" TopLine="652"/>
+      </Position15>
+      <Position16>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="670" TopLine="660"/>
+      </Position16>
+      <Position17>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="156" Column="49" TopLine="136"/>
+      </Position17>
+      <Position18>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="660" Column="29" TopLine="647"/>
+      </Position18>
+      <Position19>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="156" Column="32" TopLine="151"/>
+      </Position19>
+      <Position20>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="682" Column="70" TopLine="667"/>
+      </Position20>
+      <Position21>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="181" Column="56" TopLine="167"/>
+      </Position21>
+      <Position22>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="603" Column="33" TopLine="581"/>
+      </Position22>
+      <Position23>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="618" Column="27" TopLine="604"/>
+      </Position23>
+      <Position24>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="605" Column="12" TopLine="595"/>
+      </Position24>
+      <Position25>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="618" Column="7" TopLine="604"/>
+      </Position25>
+      <Position26>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="621" Column="4" TopLine="607"/>
+      </Position26>
+      <Position27>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="619" Column="7" TopLine="605"/>
+      </Position27>
+      <Position28>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="611" Column="19" TopLine="605"/>
+      </Position28>
+      <Position29>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="612" Column="43" TopLine="597"/>
+      </Position29>
+      <Position30>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="384" Column="10" TopLine="369"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="549"/>
+        <CursorPos X="19" Y="555"/>
+        <FoldState Value=" T3F0L3 pj7jW0A4 pidjB034]Ifk60B[94gkF067"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\TP1Numerica\Walter-Punto Flotante Normalizado\PuntoFlotante.lpr"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="15" Y="14"/>
+        <FoldState Value=" T3G0T3B"/>
+        <UsageCount Value="11"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\TP1Numerica\Wilson-Punto Flotante sin nornalizar\ConvertNumeroMimodulo.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="5" Y="76"/>
+        <FoldState Value=" T3E0bE"/>
+        <UsageCount Value="9"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\TP1Numerica\rodrigo-Control de Entrada\Project1.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3"/>
+        <CursorPos Y="13"/>
+        <FoldState Value=" T3Z0Y1U"/>
+        <UsageCount Value="11"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\TP1Numerica\Conversion\Conversion.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="379"/>
+        <CursorPos Y="392"/>
+        <FoldState Value=" TC5A41 T3I0L2 piZjI0B17411."/>
+        <UsageCount Value="12"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\TP1Numerica\alejandro- Multiplicacion Reiterada\MultiplicacionReiteradaAct\multiplicacionReiterada.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="185"/>
+        <CursorPos X="44" Y="189"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\TP1Numerica\Ana-Divicion Reiterada\divisionReiterada.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="7" Y="30"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\TP1Numerica\Maxi-Redondeo Simetrico y Truncamiento\project.lpr"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="24" Y="4"/>
+        <FoldState Value=" T3iD0{91"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="633" Column="43" TopLine="629"/>
+      </Position1>
+      <Position2>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="11" Column="24" TopLine="4"/>
+      </Position2>
+      <Position3>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="517" Column="26" TopLine="235"/>
+      </Position3>
+      <Position4>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="641" Column="12" TopLine="629"/>
+      </Position4>
+      <Position5>
+        <Filename Value="TrabajoNumerica.pas"/>
+        <Caret Line="630" TopLine="620"/>
+      </Position5>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="TrabajoNumerica.pas"/>
+        <Line Value="630"/>
+      </Item1>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

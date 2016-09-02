@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\FPC\3.0.0\bin\i386-Win32\fpc.exe" Date="1198546589"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq -FiC:\Users\cristian\Desktop\FrancoCristian\Franco\lib\i386-win32 -FuC:\Users\cristian\Desktop\FrancoCristian\Franco\ -FUC:\Users\cristian\Desktop\FrancoCristian\Franco\lib\i386-win32\ TrabajoNumerica.pas"/>
+  <Complete Value="False"/>
+</CONFIG>
